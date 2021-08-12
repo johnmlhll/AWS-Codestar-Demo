@@ -25,7 +25,7 @@ SECRET_KEY = 'CHANGE_ME'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', False) )
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['ec2-63-33-220-22.eu-west-1.compute.amazonaws.com']
 
 # Application definition
 
