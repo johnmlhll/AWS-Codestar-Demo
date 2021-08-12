@@ -1,0 +1,20 @@
+{%extends "_layout.html"%}
+{%block content%}
+<div id="home_content">
+  <h2>{%block title%}Uptime- Home{%endblock%}</h2>
+  <h3>Currently Running Service Time</h3>
+  <p>
+    Welcome to this Infrastructure Demo of a CI/CD pipline from local host to AWS cloud service. 
+    The deployment and pipeline was done via AWS CodeStar using an EC2 instance for production hosting. 
+    This webapp was developed in Python Django and was truly fun to do; yet purposely simple as this project is 
+    about showcasing the AWS codestar CICD pipeline. Current server uptime is as follows:
+  </p>
+  <div id="service_list">
+    <a>{{ service_update }}</a>
+  <p>
+    If the cost associated with this deployment is not too expensive to maintain as a standing project on my aws account, 
+    I shall post images of the version update from v1.0.0 on the v1.0.1 revision to demonstrate the power of AWS CodeStar.
+  </p>
+  </div>
+</div>
+{%endblock%}

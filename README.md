@@ -1,3 +1,38 @@
+Version
+-------
+v1.0.0 - 12th August 2021
+
+
+Introduction
+------------
+This project is developed to explore the basic features of AWS Codestar as a AWS Native CICD pipeline service that can replicate some CI functionality depending on your configure (e.g. Managed service like AWS Elastic Beanstalk V unmanaged service like EC2 straight) and CD functionality to AWS endpoint service products like ECS, EC2, AKS, plus more.
+
+Danjo was used with AWS EBS as a managed (server) service. The focus will be on CICD updates, and below will feature a small write up about the observations from updates from v1.0.0 to v1.0.1 and so on. The Python/Django application is a simple static application for simplicity sake; so not to draw focus from the infrastructure aspects of this project, which is essentially the exploration of Codestar as a CICD platform for AWS hosted applications. 
+
+Overview
+--------
+Python was chosen with Danjo for the simple reason that its the most difficult to implement in my view as its not as developed as general purpose languages like Java/SpringBoot or C#/ASP.NET that have had major backing for allot longer, thus making the AWS offering on Python Django all the more attractive to explore in this exploratory CodeStar project. Also, I think Python is awsome!!
+
+Pipeline
+--------
+-> Github Public Repo 
+--> via AWS Github Repo Conn 
+---> AWS (Codestar) CodeBuild 
+----> AWS (Codestar) CloudFormation
+-----> AWS (Codestar) CloudFormation to Elastic Beanstalk Managed EC2 Instance
+
+Cost
+-----
+Interestingly, Codestar, Elastic Beanstalk, Cloudformation and AWS Certificate Manager (For Public SSL Certs only) do not add to cost as the cost is incurred in the resources they manage (docs checked Aug 10th 2021), which is of interest given Jenkins deploying to CodeDeploy is seen as popular choice for CICD deployments based on cost alone. A sister project to compare costs maybe forthcoming to see if the proof is in the pudding so to speak.
+
+Observation Write Up - Updates
+------------------------------
+Pending
+
+
+AWS README.Md for those Interested is as below:
+-----------------------------------------------
+
 Welcome to the AWS CodeStar sample web application
 ==================================================
 

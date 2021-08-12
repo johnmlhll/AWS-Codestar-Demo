@@ -1,0 +1,241 @@
+/*General Styling*/
+body {
+    margin: 0 auto;
+    background: -webkit-linear-gradient(hsla(59, 67%, 67%, 0.897), #ffffff);
+    background: -o-linear-gradient(hsla(59, 67%, 67%, 0.897), #ffffff);
+    background: -moz-linear-gradient(hsla(59, 67%, 67%, 0.897), #ffffff);
+    background: linear-gradient(hsla(59, 67%, 67%, 0.897), #ffffff);
+    width: 100%;
+    height: auto;
+    resize: both;
+  }
+  #workflow {
+    height: auto;
+    width: 70%;
+    resize: both;
+    border-radius: 20%;
+  }
+
+  #wrapper {
+    background-color: #fdfdfd;
+    -moz-box-shadow: 3px 5px 1.5px rgba(0,1,51,0.5);
+    -webkit-box-shadow: 3px 5px 1.5px rgba(0,1,51,0.5);
+    box-shadow: 3px 5px 1.5px rgba(0,1,51,0.5);
+    text-align: center;
+    margin: 2% auto;
+    padding: 1%;
+    border-radius: 10%;
+    font-family: Verdana, Palatino, serif;
+    width: 95%;
+    height: auto;
+    resize: both;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  #main_content {
+    font-size: 1.2em;
+  }
+  
+  #navbar {
+    list-style-type: none;
+    display: inline-block;
+    border-radius: 5%;
+    border-style: outset;
+    background-color: #f49e42;
+    padding: 1%;
+    width: 60%;
+    height: auto;
+    resize: both;
+  }
+  
+  #navbar li {
+    text-decoration: none;
+    display: inline;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    color: #edecde;
+    font-size: 1.8em;
+    margin: 1% auto;
+    border-style: outset;
+    padding: 1.5%;
+    text-align: center;
+    resize: both;
+  }
+  
+  #navbar li a:hover {
+    border-radius: 8%;
+    border-style: inset;
+    background-color: #ffff80;
+    color:#57af56;
+  }
+  
+  footer {
+    display: inline;
+  }
+  
+  .urls ul {
+    list-style-type: none;
+  }
+    .urls ul li a {
+      text-decoration: none;
+      padding: 1%;
+      color: #4286f4;
+    }
+      .urls ul li a:hover {
+        color: #51e53d;
+      }
+  .hr_ruler {
+    width: 70%;
+  }
+  
+  /*Specified Styling - home.html*/
+  
+  #service_list > ul > li {
+    width: 80%;
+    height: auto;
+    padding: 1%;
+    resize: both;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  #home_content > p {
+    align-items: left;
+  }
+
+  .buttons {
+    padding: 0.5%;
+    margin:1% auto;
+    width: 25%;
+    resize: both;
+    display: block;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  
+  .btn_single {
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 15%;
+    resize: both;
+    padding: 1%;
+    border-radius: 7%;
+    border-style: ridge;
+    font-size: 0.9em;
+    min-width: 100px;
+  }
+    .btn_single:hover, .buttons:hover {
+      background-color: #51e53d;
+      color: #ffffff;
+    }
+  
+  /* Restricted Styling - 840px max Screen*/
+  @media only screen and (max-width: 840px) {
+      /*General Styling*/
+      body {
+        background-color: #ffffff;
+      }
+  
+      #wrapper {
+        background-color: #ffffe6;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        min-width: 300px;
+      }
+  
+      #navbar {
+        list-style-type: none;
+        display: inline-block;
+        border-style: ridge;
+        border-radius: 0;
+        background-color: #f49e42;
+        padding: 0.5%;
+        width: 100%;
+        height: auto;
+        resize: both;
+      }
+  
+      #navbar li {
+        text-decoration: none;
+        display: inline-block;
+      }
+  
+      #navbar li a {
+        text-decoration: none;
+        color: #edecde;
+        font-size: 1.4em;
+        margin: 0.5% auto;
+        border-style: none;
+        padding: 1.5%;
+        font-stretch: condensed;
+        text-align: center;
+        resize: both;
+      }
+  
+      #navbar li a:hover {
+        border-radius: 40%;
+        border-style: none;
+        background-color: #ffff80;
+        color:#57af56;
+      }
+  
+      /*Specified Styling - home.html*/
+      .input_forms {
+        width: 100%;
+        resize: both;
+        display: block;
+        padding: 0;
+        margin: 0;
+      }
+  
+      .textboxes, label, h3, form {
+        clear: both;
+        text-align: center;
+        display: block;
+        float: none;
+        margin: 0;
+        width: 100%;
+        font-size: 120%;
+      }
+  
+      #upload_form {
+        padding: 0;
+      }
+  
+      .csv_display {
+        box-sizing: content-box;
+        -webkit-box-sizing:content-box;
+        width: 100%;
+        resize: both;
+      }
+  
+      .btn_single {
+        width: 10%;
+        resize: both;
+        padding: 0.5%;
+      }
+  
+      .buttons {
+        width: 30%;
+        resize: both;
+        border-radius: 8%;
+        font-size: 0.8em;
+        min-width: 200px;
+      }
+  
+      /*Specific Styling - about.html*/
+      .pictures img {
+        width: 80%;
+        height: auto;
+        resize: both;
+      }
+    }
+  
