@@ -129,10 +129,15 @@ body {
     font-size: 0.9em;
     min-width: 100px;
   }
-    .btn_single:hover, .buttons:hover {
-      background-color: #51e53d;
-      color: #ffffff;
-    }
+
+  .btn_single:hover, .buttons:hover {
+    background-color: #51e53d;
+    color: #ffffff;
+  }
+
+  #cicdflow > li {
+    list-style-type: none;
+  }
   
   /* Restricted Styling - 840px max Screen*/
   @media only screen and (max-width: 840px) {
