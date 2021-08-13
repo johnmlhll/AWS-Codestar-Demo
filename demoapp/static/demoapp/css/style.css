@@ -9,7 +9,7 @@ body {
     height: auto;
     resize: both;
   }
-  #workflow {
+  .workflow {
     height: auto;
     width: 70%;
     resize: both;

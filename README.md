@@ -2,6 +2,7 @@ Version
 -------
 v1.0.0 - 12th August 2021
 
+Application Url: http://ec2-63-33-220-22.eu-west-1.compute.amazonaws.com
 
 Introduction
 ------------

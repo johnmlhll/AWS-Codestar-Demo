@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <title>{%block title%}Django CICD App AWS{%endblock%}</title>
   <script src="/static/javascript.js"></script>
-  <link rel="stylesheet" href="{% static "/demoapp/css/style.css" %}">
+  <link rel="stylesheet" href='{% static "/demoapp/css/style.css" %}'>
   <meta name="author" content="John Mulhall"/>
   <meta name="description" content="Infrastructure demo of a CI/CD pipeline deployment for a Python app onto AWS cloud platform using using AWS CodeStar"/>
-  <meta name="keywords" content="infrastructure, ci, cd, codedeploy, cloudformation, systems, CodeStar, aws, amazon, ireland, python, flask"/>
+  <meta name="keywords" content="infrastructure, cicd, codedeploy, cloudformation, systems, codestar, aws, amazon, ireland, python, django"/>
 </head>
 <body>
   <div id="wrapper">
     <header>
       <a href="https://jmulhall.azurewebsites.net/" target="_blank">
-        <img id='workflow' src="{% static "/demoapp/img/img_aws_codestar.png" %}" alt="AWS Codestar Project Image"/>
+        <img class='workflow' src='{% static "/demoapp/img/img_aws_codestar.png" %}' alt="AWS Codestar Project Image"/>
       </a>
       <h1>Services Uptime<sub>An AWS CI/CD Infrastructure Project</sub></h1>
     </header>
@@ -43,10 +43,10 @@
           </li>
         </ul>
       </div>
-      <p>AWS Codestar Provisioned CI/CD Demo - Version 1.0.0 - johnmlhll@yahoo.com</p>
+      <p>AWS Codestar Provisioned CI/CD Demo - Version 1.0.1 - johnmlhll@yahoo.com</p>
       <p>&copy; John Mulhall 2021</p>
-      <script src="{% static "demoapp/js/set-background.js" %}"></script>
-      <script src="{% static "demoapp/js/javascript.js" %}"></script>
+      <script src='{% static "demoapp/js/set-background.js" %}'></script>
+      <script src='{% static "demoapp/js/javascript.js" %}'></script>
     </footer>
   </div>
 </body>
