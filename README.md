@@ -1,6 +1,7 @@
 Version
 -------
 v1.0.0 - 12th August 2021
+v1.0.1 - 13th August 2021
 
 Application Url: http://ec2-63-33-220-22.eu-west-1.compute.amazonaws.com
 
@@ -28,8 +29,15 @@ Interestingly, Codestar, Elastic Beanstalk, Cloudformation and AWS Certificate M
 
 Observation Write Up - Updates
 ------------------------------
-Pending
+V1.0.1 Update was a slight update that had a few silly typos (woopsies) that I just had to rerun the pipeline to fix and I noted the following:
+- it ran efficiently with codestar communicating efficiently with underlying resources
+- my test class in my deployment tested the web gui pages, which failed the build twice proving app driven CI testing is required. Anything exotic especially with a computational element require good test classes at app level
+- the cost has not risen for 4 minor updates over the last 48 hours (I checked)
+- codestar templated CI checks cover the basics and will work for vanilla deployments
+- CI test fails occur like Jenkins when the test fails, you can despite what some say influence this at build stage in the buildspec.yml file for deployment onto EBS, and appspec.yml if deploying directly to EC2s for small apps.
+- CD aspects of the pipeline were controlled by a protected master branch in github and optional static scanning of code in Pull Request with branch rules. Im nearly sure the deployments can be scheduled 
 
+Overall, for AWS centric app hosting, I found Codestar to be an option to Jenkins for vanilla deployments. Large projects with specialised requirements were not covered in scope of this project but maybe research in future lab projects by myself.
 
 AWS README.Md for those Interested is as below:
 -----------------------------------------------
